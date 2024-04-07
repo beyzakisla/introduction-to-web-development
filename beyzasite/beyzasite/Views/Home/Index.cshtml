@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            background-image: url("C:/Users/user/Desktop/2f7d68ceaa4bd614f252cf3fb9d61df7.jpg");
+            background-size: cover;
+            background-position: center center;
+            margin: 0; 
+            padding: 0; 
+        }
+
+        h1 {
+            font-size: 50px;
+            color: pink;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: orange;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: purple;
+        }
+
+        footer {
+            text-align: center;
+            background-color: pink;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>@ViewBag.Message</h1>
+    </br>
+    </br>
+    <h1>🧡💚</h1>
+    </br>
+    </br>
+    <div class="text-center">
+        <h2><b>Now, You are in the My World!</b></h2>
+        </br>
+        <h3><b>(: You will meet the eighth color of the rainbow here :)</b></h3>
+        </br>
+        </br>
+        <h1>💜</h1>
+        </br>
+        </br>
+    </div>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+        </ul>
+    </header>
+
+</body>
+</html>
